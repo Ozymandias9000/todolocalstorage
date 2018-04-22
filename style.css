@@ -61,6 +61,8 @@
 
     .add-items {
       margin-top: 20px;
+      display: grid;
+      grid-gap: 10px;
     }
 
     .add-items input {
@@ -68,3 +70,14 @@
       outline:0;
       border:1px solid rgba(0,0,0,0.1);
     }
+
+    input[type='text'] {
+      grid-column: span 2;
+    }
+    
+    input[type='submit'], input[type='reset'] {
+      grid-column: span 1;
+      border-radius: 2px;
+    }
+
+    
